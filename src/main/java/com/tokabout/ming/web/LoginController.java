@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Created by bungubbang
  * Email: sungyong.jung@sk.com
- * Date: 8/25/13
+ * Date: 13. 8. 30.
  */
 @Slf4j
 @Controller
-public class IntroController {
+public class LoginController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String hello() {
-        return "hello";
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String login() {
+        return "login";
     }
 }

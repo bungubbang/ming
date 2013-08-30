@@ -25,6 +25,9 @@
         <module name="ming" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ming" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%d{HH:mm} %-5level %logger{36} - %msg%n</Pattern>
+		</layout>
+	</appender>
+
+	<logger name="com.skplanet.ugc" level="DEBUG"/>
+
+	<logger name="org.springframework" level="INFO"/>
+    <logger name="org.springframework.web" level="DEBUG"/>
+    <logger name="org.springframework.security" level="DEBUG"/>
+
+    <logger name="org.thymeleaf" level="INFO"/>
+
+	<logger name="jdbc.sqlonly" level="INFO"/>
+	<logger name="jdbc.resultsettable" level="INFO"/>
+
+	<root level="WARN">
+		<appender-ref ref="STDOUT"/>
+	</root>
+
+</configuration>
