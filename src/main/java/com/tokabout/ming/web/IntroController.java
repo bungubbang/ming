@@ -16,6 +16,6 @@ public class IntroController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String hello() {
-        return "hello";
+        return "index";
     }
 }

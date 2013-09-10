@@ -12,6 +12,7 @@ import java.util.List;
  * Date: 8/25/13
  */
 @Data
+@Entity
 public class Moim {
 
     @Id

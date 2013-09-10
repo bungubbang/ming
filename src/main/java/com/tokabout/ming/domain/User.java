@@ -3,6 +3,7 @@ package com.tokabout.ming.domain;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
@@ -12,12 +13,13 @@ import javax.persistence.Id;
  * Date: 8/25/13
  */
 @Data
+@Entity
 public class User {
 
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid")
-    private Long id;
+    private String id;
 
     private String name;
 
@@ -25,5 +27,5 @@ public class User {
 
     private String email;
 
-    private Long fbid;
+    private String fbid;
 }

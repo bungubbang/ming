@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+    <!-- Load the Facebook JavaScript SDK -->
+    <h1>Ming</h1>
+    <img src="#" class=""/>
+    <hr/>
+
+    <body th:include="layout/script::fb_script">
+    </body>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        var start = function() {
+            FB.api("/me", function(response) {
+
+                console.log(response.id);
+            });
+        }
+        /*]]>*/
+    </script>
+</body>
+</html>

@@ -3,6 +3,7 @@ package com.tokabout.ming.domain;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -13,6 +14,7 @@ import javax.persistence.ManyToOne;
  * Date: 8/25/13
  */
 @Data
+@Entity
 public class Place {
 
     @Id
